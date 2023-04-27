@@ -13,7 +13,7 @@ const images = [
   },
 ];
 
-const imgList = document.querySelector('.gallery');
+const imgListEl = document.querySelector('.gallery');
 
 const markup = images
   .map((image) => `<li><img
@@ -21,4 +21,5 @@ const markup = images
   alt="${image.alt}"
 /></li>`);
 
-imgList.insertAdjacentHTML("beforeend", markup);
+imgListEl.insertAdjacentHTML("beforeend", markup);
+imgListEl.classList.add('js-images-styles')
