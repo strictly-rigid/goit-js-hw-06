@@ -12,11 +12,11 @@ const handleFormSubmit = function (event) {
     const formElements = event.currentTarget.elements;
 
     const mail = formElements.email.value;
-    const password = formElements.password.value;
+    const validPassword = formElements.password.value;
 
     const formData = {
-    email,
-    password
+    mail,
+    validPassword
   };
 
     console.log(formData);
