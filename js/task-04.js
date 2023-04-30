@@ -3,17 +3,21 @@ let showValue = document.querySelector('#value');
 
 const decrBtn = document.querySelector('button[data-action="decrement"]');
 
-decrBtn.addEventListener("click", () => {
+const decrementHandler = function () {
     counterValue -= 1;
     showValue.textContent = counterValue;
-})
+}
+
+decrBtn.addEventListener("click", decrementHandler)
 
 const incrBtn = document.querySelector('button[data-action="increment"]');
 
-incrBtn.addEventListener("click", () => {
+const incrementHandler = function () {
     counterValue += 1;
     showValue.textContent = counterValue;
-})
+}
+
+incrBtn.addEventListener("click", incrementHandler)
 
 
 
